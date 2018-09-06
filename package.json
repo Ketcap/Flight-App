@@ -1,0 +1,27 @@
+{
+  "name": "flightapp",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://ketcap.github.io/Flight-App",
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.5",
+    "unfetch": "^3.1.1"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0",
+    "node-sass": "^4.9.3",
+    "react-app-rewire-css-modules": "github:codebandits/react-app-rewire-css-modules",
+    "react-app-rewired": "^1.6.2",
+    "sass-loader": "^7.1.0"
+  }
+}

@@ -1,0 +1,26 @@
+.container{
+	display: flex;
+	flex:1;
+	flex-direction: column;
+	.header{
+		display: flex;
+		flex-direction: row;
+		height: 50px;
+    justify-content: space-between;
+		align-items: center;
+		color:#575B62;
+		text-transform: uppercase;
+		a{
+			color:#BDC0C8;
+			font-size:14px;
+			text-decoration: underline;
+			text-transform: none;
+			cursor: pointer;
+		}
+	}
+	.options{
+		display: flex;
+		flex:1;
+		flex-direction: column;
+	}
+}

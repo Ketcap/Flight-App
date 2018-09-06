@@ -1,0 +1,16 @@
+.titlebar{
+	display: flex;
+	flex:1;
+	flex-direction: row;
+	min-height: 56px;
+	border:1px solid #E0E0E0;
+	align-items: center;
+	padding: .5em 1em;
+	> div{
+		display: flex;
+		flex:1;
+		color: #888D99;
+		font-size: 14px;
+		padding: 0 .3em;
+	}
+}

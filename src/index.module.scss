@@ -1,0 +1,27 @@
+.container{
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	margin: 3em auto;
+	> div {
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	}
+	.filters{
+		display: flex;
+		width: 25%;
+		height: 200px;
+		padding: .5em;
+		flex:1;
+		background-color: white;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		margin-right: 5%;
+		> div:not(:last-child){
+			border-bottom: 1px solid #E0E0E0;
+		}
+	}
+	.results{
+		display: flex;
+		width: 70%;
+		flex-direction: column;
+	}
+}
