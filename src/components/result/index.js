@@ -56,11 +56,11 @@ export default class Result extends Component {
           </div>
         </div>
         {show &&
-          <div class={classes.moreInfo}>
+          <div className={classes.moreInfo}>
             <div>
               <div className={classes.flightInfo}>
                 {[1, 2].map(e => (
-                  <div>
+                  <div key={e}>
                     <div className={classes.exDeparture}>
                       <div className={classes.exTime}>21:30</div>
                       <div className={classes.exCode}>Izmir ADB</div>
