@@ -1,3 +1,3 @@
 #Project Links
 
- flighapp.now.sh
+flightapp.now.sh
