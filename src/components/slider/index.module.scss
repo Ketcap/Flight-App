@@ -1,0 +1,26 @@
+.container {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em .3em;
+  .title {
+    margin-bottom: 5px;
+    font-size: .85em;
+  }
+  input[type='range'] {
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    border-radius: 6px;
+    height: 6px;
+  }
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: #F12A15;
+    border: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+  }
+  ;
+}

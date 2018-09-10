@@ -1,33 +1,72 @@
-.header{
-	max-width: 80%;
-	margin: 0 auto;
-	height:100px;
-	background-color: #fff;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	padding: 0 3em;
-	justify-content: space-between;
-	.menu{
-		list-style: none;
-		display: flex;
-		flex-direction: row;
-		padding: 0;
-		margin:0;
-		> li{
-			display: flex;
-			flex-direction: row;
-			padding: 10px;
-			img{
-				margin-right: 10px;
-			}
-			div{
-				display: flex;
-  			flex-direction: column;
-				justify-content: center;
-				padding-top: 2px;
-				color: #888D99;
-			}
-		}
-	}
+@import '../../variables.scss';
+.header {
+  width: $container-width;
+  margin: 0 auto;
+  min-height: 100px;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 3em;
+  justify-content: space-between;
+  .menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    >li {
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      img {
+        margin-right: 10px;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 2px;
+        color: #888D99;
+      }
+    }
+  }
+  .menuIcon {
+    display: none;
+  }
+  @include tablet {
+    flex-wrap: wrap;
+    width: $container-tablet-width;
+    .menu {
+      flex-direction: column;
+      overflow: hidden;
+      width: 100vh;
+      display: none;
+    }
+    .menuIcon {
+      display: flex;
+    }
+    &.active {
+      min-height: 100px;
+      height: auto;
+      padding: 30px 0;
+      .menu {
+        display: flex;
+        overflow: auto;
+        justify-content: center;
+        align-items: unset;
+        direction: rtl;
+        height: auto;
+        >li {
+          img {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+  @include mobile {
+    width: $container-mobile-width;
+  }
 }

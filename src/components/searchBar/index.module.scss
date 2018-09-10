@@ -1,20 +1,27 @@
-.searchbar{
-	display: flex;
-	background:#F12A15;
-	height:100px;
-	justify-content: center;
-	align-items: center;
-	.container{
-		width: 80%;
-		height: 54px;
-		background: #fff;
-		display: flex;
-		flex-direction: row;
-	}
-	.buttonWrapper{
+@import '../../variables.scss';
+.searchbar {
+  display: flex;
+  background: #F12A15;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  .container {
+    width: $container-width;
+    height: 54px;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    @include tablet {
+      width: $container-tablet-width;
+    }
+    @include mobile {
+      width: $container-mobile-width;
+    }
+  }
+  .buttonWrapper {
     display: flex;
     padding: .5em;
     justify-content: center;
     align-items: center;
-	}
+  }
 }
