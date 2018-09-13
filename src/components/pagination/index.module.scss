@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  >div {
+    margin: 0 .5em;
+    padding: 1em 1.25em;
+    background: #fff;
+    color: #3F4146;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+    &.active {
+      background: #F12A15;
+      color: #fff;
+    }
+  }
+}

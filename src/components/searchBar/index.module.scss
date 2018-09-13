@@ -2,26 +2,43 @@
 .searchbar {
   display: flex;
   background: #F12A15;
-  height: 100px;
+  min-height: 100px;
+  padding: 20px 0;
   justify-content: center;
   align-items: center;
   .container {
     width: $container-width;
-    height: 54px;
+    min-height: 54px;
     background: #fff;
     display: flex;
     flex-direction: row;
     @include tablet {
       width: $container-tablet-width;
+      flex-wrap: wrap;
+      .break {
+        display: flex;
+      }
     }
     @include mobile {
       width: $container-mobile-width;
+      .break {
+        display: flex;
+      }
     }
   }
   .buttonWrapper {
     display: flex;
-    padding: .5em;
+    flex: 2;
     justify-content: center;
     align-items: center;
+    border-right: 1px solid #E0E0E0;
   }
+}
+
+.break {
+  flex-basis: 100%;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  display: none;
 }

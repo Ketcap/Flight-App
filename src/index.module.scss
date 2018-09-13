@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: row;
   width: $container-width;
-  margin: 3em auto;
+  margin: 0 auto;
+  flex-wrap: wrap;
   @include tablet {
     width: $container-tablet-width;
   }
@@ -36,4 +37,23 @@
     width: 75%;
     flex-direction: column;
   }
+}
+
+.pagination {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  box-shadow: none !important;
+  margin-top: 1em;
+  >div {
+    margin-left: auto;
+  }
+}
+
+.break {
+  flex-basis: 100%;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  display: block;
 }

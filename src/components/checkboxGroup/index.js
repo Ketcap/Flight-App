@@ -32,8 +32,9 @@ export default class CheckboxGroup extends Component {
         </div>
         <div classes={classes.options}>
           {this.props.options.map((option, index) => {
+            const { Name } = option;
             return (
-              <Checkbox key={index} name={option} checked={this.state[index] ? this.state[index] : false} onClick={this.toggle(index)} />
+              <Checkbox key={index} name={Name ? Name : option} checked={this.state[index] ? this.state[index] : false} onClick={this.toggle(index)} />
             )
           })}
         </div>
