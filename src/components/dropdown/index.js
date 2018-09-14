@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import { clickOut } from '../../partials';
+import React, { Component } from 'react';
 
 import classes from './index.module.scss';
 

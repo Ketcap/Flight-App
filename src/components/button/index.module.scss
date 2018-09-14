@@ -1,14 +1,16 @@
-.button{
-	display: flex;
-	border:none;
-	padding: .5em 1em;
-	font-size: 14px;
-	color: #fff;
-	border-radius: 3px;
-	&.primary{
-		background-color: #F12A15;
-	}
-	&.secondary{
-		background-color: #1962AF;
-	}
+.button {
+  display: flex;
+  border: none;
+  padding: .5em 1em;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 3px;
+  &.primary {
+    background-color: #F12A15;
+  }
+  &.secondary {
+    background-color: #1962AF;
+    min-height: 40px;
+    padding: 1em;
+  }
 }

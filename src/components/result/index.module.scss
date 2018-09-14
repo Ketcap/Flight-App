@@ -1,7 +1,77 @@
+@import '../../variables.scss';
 .wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   border-bottom: 1px solid #E0E0E0;
   padding: 1.5em;
   transition: all .15s ease-in;
+  .section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: .5em 0;
+    &.carrier {
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-position-x: left;
+      background-position-y: center;
+      background-size: contain;
+    }
+    >span:first-child {
+      padding-top: .5em;
+    }
+    >span:last-child {
+      padding-bottom: .5em;
+    }
+    >span {
+      padding: 0 1em;
+    }
+    .title {
+      font-size: 16px;
+      color: #3F4146;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #888D99;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  .departure:after {
+    content: '';
+    background-image: url('/svg/plane.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+  }
+  .grey {
+    background-color: #F6F7F9;
+  }
+}
+
+.break {
+  flex-basis: 100%;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  display: none;
+}
+
+@include tablet {
+  .break {
+    display: block;
+  }
+}
+
+@include mobile {
+  .break {
+    display: block;
+  }
 }

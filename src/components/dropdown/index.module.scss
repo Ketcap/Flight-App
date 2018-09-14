@@ -27,6 +27,7 @@
     border: 1px solid #D9DCE4;
     max-height: 0;
     overflow: hidden;
+    z-index: 999;
     &.open {
       max-height: 500px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);

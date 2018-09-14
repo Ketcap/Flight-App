@@ -31,13 +31,17 @@ class Context extends React.Component {
   sortChange = (value) => {
     this.setState(prev => ({
       ...prev,
+      page: 1,
       results: prev.data.Itineraries.sort((first, last) => {
         switch (value) {
           case 0:
             return last.Order.lowestPrice - first.Order.lowestPrice;
           case 1:
             return first.Order.lowestPrice - last.Order.lowestPrice;
-
+          case 2:
+            return last.OutboundLegId.Departure - first.OutboundLegId.Departure;
+          case 3:
+            return first.OutboundLegId.Departure - first.OutboundLegId.Departure;
           default:
             return;
         }
